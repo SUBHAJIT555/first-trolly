@@ -37,6 +37,11 @@ export default function RootLayout({
 
   return (
     <html lang="en" className={plusJakarta.variable} suppressHydrationWarning={true}>
+      <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+      </head>
       <body className={`${plusJakarta.className} font-sans`}>
         {loading ? (
           <PreLoader />

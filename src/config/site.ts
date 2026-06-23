@@ -1,11 +1,13 @@
 export const siteConfig = {
   brand: {
-    name: "First Trolley",
+    name: "First Trolly",
+    domain: "first-trolly.com",
+    url: "https://first-trolly.com",
     email: {
-      support: "support@first-trolly.com",
-      privacy: "privacy@first-trolly.com",
-      legal: "legal@first-trolly.com",
       general: "info@first-trolly.com",
+      support: "info@first-trolly.com",
+      privacy: "info@first-trolly.com",
+      legal: "info@first-trolly.com",
     },
     phone: "+91 9876543210",
     address: {

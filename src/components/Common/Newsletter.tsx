@@ -83,7 +83,7 @@ const Newsletter = () => {
                 id="newsletter-email"
                 type="email"
                 {...register("email")}
-                placeholder="you@example.com"
+                placeholder="you@first-trolly.com"
                 className={`w-full rounded-brutal border-2 bg-white px-4 py-3.5 text-sm font-medium text-ink outline-none shadow-brutal-sm transition-all duration-150 placeholder:text-dark-5 focus:translate-x-0.5 focus:translate-y-0.5 focus:shadow-none sm:px-5 sm:text-base ${
                   errors.email
                     ? "border-red"

@@ -1,11 +1,11 @@
 import React from "react";
 import { Wishlist } from "@/components/Wishlist";
+import { siteConfig } from "@/config/site";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Wishlist | First Trolley",
-  description:
-    "Your wishlist at First Trolley. Save items and buy when you're ready.",
+  title: `Wishlist | ${siteConfig.brand.name}`,
+  description: `Your wishlist at ${siteConfig.brand.name}. Save items and buy when you're ready.`,
 };
 
 const WishlistPage = () => {

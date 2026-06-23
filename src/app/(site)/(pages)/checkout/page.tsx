@@ -1,11 +1,11 @@
 import React from "react";
 import Checkout from "@/components/Checkout";
+import { siteConfig } from "@/config/site";
 
 import { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "Checkout | First Trolley",
-  description:
-    "Complete your quote request at First Trolley. Secure checkout for your order.",
+  title: `Checkout | ${siteConfig.brand.name}`,
+  description: `Complete your quote request at ${siteConfig.brand.name}. Secure checkout for your order.`,
 };
 
 const CheckoutPage = () => {

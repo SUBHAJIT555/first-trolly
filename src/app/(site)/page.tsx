@@ -1,12 +1,12 @@
 import Home from "@/components/Home";
 import { getSiteNumber } from "@/lib/siteConfig";
 import { selectProducts } from "@/lib/productSelector";
+import { siteConfig } from "@/config/site";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "First Trolley | Online Shopping for Electronics, Books, Stationery, and Garments",
-  description: "First Trolley is India's trusted store for electronics, books, stationery, and garments. Enjoy honest prices, fast delivery, and support made for Indian shoppers.",
-  // other metadata
+  title: `${siteConfig.brand.name} | Online Shopping for Electronics, Books, Stationery, and Garments`,
+  description: `${siteConfig.brand.name} is India's trusted store for electronics, books, stationery, and garments. Enjoy honest prices, fast delivery, and support made for Indian shoppers.`,
 };
 
 export default function HomePage() {

@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { siteConfig } from "@/config/site";
+import BrandLogo from "@/components/Common/BrandLogo";
 
 const quickLinks = [
   { label: "Home", href: "/" },
@@ -66,14 +67,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 xl:grid-cols-4">
           {/* Brand */}
           <div className={columnClass}>
-            <Link href="/" className="mb-5 inline-block">
-              <Image
-                src="/images/logo/logo.svg"
-                alt={siteConfig.brand.name}
-                width={219}
-                height={36}
-                className="h-8 w-auto"
-              />
+            <Link href="/" className="mb-5 inline-block" aria-label={`${siteConfig.brand.name} home`}>
+              <BrandLogo size="lg" />
             </Link>
             <p className="mb-6 flex-1 text-sm leading-relaxed text-dark-3">
               {siteConfig.brand.name} is India&apos;s trusted store for

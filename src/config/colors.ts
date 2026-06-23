@@ -1,5 +1,5 @@
 // Centralized Color Configuration
-// First Trolley — neobrutalism palette
+// First Trolly — neobrutalism palette
 
 export const brandColors = {
   ink: "#1A1A1A",

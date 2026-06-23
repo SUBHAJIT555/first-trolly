@@ -2,12 +2,12 @@ import React from "react";
 import ShopWithoutSidebar from "@/components/ShopWithoutSidebar";
 import { getSiteNumber } from "@/lib/siteConfig";
 import { selectProducts } from "@/lib/productSelector";
+import { siteConfig } from "@/config/site";
 
 import { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "Shop | Supreme Cart",
-  description: "Shop electronics, books, stationery, and garments at Supreme Cart. Honest prices, fast delivery across India.",
-  // other metadata
+  title: `Shop | ${siteConfig.brand.name}`,
+  description: `Shop electronics, books, stationery, and garments at ${siteConfig.brand.name}. Honest prices, fast delivery across India.`,
 };
 
 const ShopWithoutSidebarPage = () => {

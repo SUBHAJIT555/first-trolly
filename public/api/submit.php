@@ -22,8 +22,9 @@ set_exception_handler(function ($e) {
 // --- CORS ---
 $origin  = $_SERVER['HTTP_ORIGIN'] ?? '';
 $allowed = [
-    'https://supreme-cart.com',
-    'https://www.supreme-cart.com',
+    'https://first-trolly.com',
+    'https://www.first-trolly.com',
+    'http://localhost:3000',
 ];
 if ($origin && in_array($origin, $allowed, true)) {
     header("Access-Control-Allow-Origin: $origin");
@@ -133,12 +134,12 @@ $smtpSecure = $_ENV['SMTP_SECURE'];
 
 $toAddresses = [['aditya@baharnani.com', 'Aditya Baharnani']];
 $fromEmail = $smtpUser;
-$fromName  = 'Snap Gears Website';
+$fromName  = 'First Trolly';
 
 // --- Brand styling ---
-$brandName = 'Supreme Cart';
-$tagline   = 'Where Innovation Meets Excellence.';
-$brandColor = '#0a2540';
+$brandName = 'First Trolly';
+$tagline   = 'Everything you need, all in one place.';
+$brandColor = '#FF5C35';
 $muted = '#6b7280';
 $bg = '#f9fafb';
 $cardBg = '#ffffff';

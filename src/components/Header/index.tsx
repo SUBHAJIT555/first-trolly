@@ -12,6 +12,8 @@ import { useCartModalContext } from "@/app/context/CartSidebarModalContext";
 import Image from "next/image";
 import categoryData from "@/constants/categoryData";
 import { selectProducts } from "@/lib/productSelector";
+import BrandLogo from "@/components/Common/BrandLogo";
+import { siteConfig } from "@/config/site";
 
 const Header = () => {
   const router = useRouter();
@@ -262,15 +264,8 @@ const Header = () => {
         <div className="relative py-3 lg:hidden">
           <div className="grid grid-cols-3 items-center gap-2">
             <div className="min-w-0 justify-self-start">{cartButton}</div>
-            <Link href="/" className="justify-self-center px-1">
-              <Image
-                src="/images/logo/logo.svg"
-                alt="Logo"
-                width={160}
-                height={28}
-                className="h-7 w-auto max-w-[140px] sm:max-w-[160px]"
-                priority
-              />
+            <Link href="/" className="justify-self-center px-1" aria-label={`${siteConfig.brand.name} home`}>
+              <BrandLogo size="sm" />
             </Link>
             <div className="justify-self-end">{menuToggleButton()}</div>
           </div>
@@ -292,13 +287,8 @@ const Header = () => {
           }`}
         >
           <div className="flex w-full flex-col items-center gap-5 sm:flex-row sm:justify-between sm:gap-10 xl:w-auto">
-            <Link className="flex-shrink-0" href="/">
-              <Image
-                src="/images/logo/logo.svg"
-                alt="Logo"
-                width={219}
-                height={36}
-              />
+            <Link className="flex-shrink-0" href="/" aria-label={`${siteConfig.brand.name} home`}>
+              <BrandLogo size="md" />
             </Link>
 
             <div className="relative hidden w-full max-w-[475px] lg:block" ref={searchRef}>

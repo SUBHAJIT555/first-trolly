@@ -2,12 +2,12 @@ import React from "react";
 import ShopWithSidebar from "@/components/ShopWithSidebar";
 import { getSiteNumber } from "@/lib/siteConfig";
 import { selectProducts } from "@/lib/productSelector";
+import { siteConfig } from "@/config/site";
 
 import { Metadata } from "next";
 export const metadata: Metadata = {
-  title: "Shop | First Trolley",
-  description:
-    "Shop electronics, books, stationery, and garments at First Trolley. Honest prices, fast delivery across India.",
+  title: `Shop | ${siteConfig.brand.name}`,
+  description: `Shop electronics, books, stationery, and garments at ${siteConfig.brand.name}. Honest prices, fast delivery across India.`,
 };
 
 const ShopWithSidebarPage = () => {
